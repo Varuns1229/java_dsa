@@ -15,17 +15,17 @@ public class hollowdiamond {
         System.out.println("space-loop");
         for (int i = 1; i <= n; i++) {
 
-            // print spaces
+            // print star
             for (int j = 0; j <= star; j++) {
                 System.out.print("*\t");
             }
 
-            // print star
+            // print spaces
             for (int j = 1; j <= space; j++) {
                 System.out.print("\t");
             }
 
-            // print spaces
+            // print star
             for (int j = 0; j <= star; j++) {
                 System.out.print("*\t");
             }
