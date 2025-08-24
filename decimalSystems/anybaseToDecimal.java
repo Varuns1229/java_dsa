@@ -1,19 +1,18 @@
-package functions;
+package decimalSystems;
 
-import java.util.*;
+import java.util.Scanner;
 
-public class decimalToAnyBase {
-
-    public static int anyBase(int num, int base) {
+public class anybaseToDecimal {
+    public static int anyBaseToDecimal(int num, int base) {
         int val = 0;
         int power = 1;
- 
+
         while (num > 0) {
-            int rim = num % base;
-            num = num / base;
+            int rim = num % 10;
+            num = num / 10;
             val += rim * power;
-            power = power * 10;
-         
+            power = power * base;
+
         }
         return val;
     }
@@ -21,9 +20,9 @@ public class decimalToAnyBase {
     public static void main(String[] args) {
         try (Scanner scn = new Scanner(System.in)) {
             int n = scn.nextInt();
-            int d = scn.nextInt();
+            int base = scn.nextInt();
 
-            int ans = anyBase(n, d);
+            int ans = anyBaseToDecimal(n, base);
             System.out.println("answer ==> " + ans);
         }
     }
