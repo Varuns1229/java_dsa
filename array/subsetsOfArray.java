@@ -31,6 +31,8 @@ public class subsetsOfArray {
             for (int j = 0; j < binArry.length; j++) {
                 if (binArry[j] == 1)
                     System.out.print(arr1[j] + " ");
+                else
+                    System.out.print("- ");
             }
             System.out.print(" \n");
         }
